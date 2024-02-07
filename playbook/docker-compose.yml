@@ -1,17 +1,16 @@
-version: '3'
+---
+version: "3"
 services:
   clickhouse:
     platform: linux/amd64
     image: pycontribs/centos:7
     container_name: clickhouse-01
     restart: unless-stopped
-    entrypoint: "sleep infinity"
+    entrypoint: sleep infinity
 
   ubuntu:
     platform: linux/amd64
     image: pycontribs/centos:7
     container_name: vector-01
     restart: unless-stopped
-    entrypoint: "sleep infinity"
-
-
+    entrypoint: sleep infinity
